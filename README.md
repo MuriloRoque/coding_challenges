@@ -3,13 +3,8 @@ This repo constains all of the coding challenges done by me.
 
 ## Built With
 
-- Ruby
-
-### Setup
-- Clone the project to your local machine;
-- cd into the desired project's directory;
-- Change the tests' contents (e.g. what's inside each puts) if you desire and/or;
-- Run `file_name.rb` in your terminal (change the `file_name` to the desired project's name).
+- Ruby;
+- Python.
 
 ## Author
 
