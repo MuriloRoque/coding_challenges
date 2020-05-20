@@ -1,15 +1,18 @@
+# frozen_string_literal: true
+
 # Start with your code from last challenge.
 class Node
   attr_accessor :value, :next_node
-  
+
   def initialize(value, next_node = nil)
-	  @value = value
+    @value = value
     @next_node = next_node
   end
 end
 
+# LinkedList class
 class LinkedList
-  #setup head and tail
+  # setup head and tail
   def initialize
     @list = []
   end
@@ -21,25 +24,23 @@ class LinkedList
 
   def get(index)
     # your code here
-    return @list[index]
+    @list[index]
   end
-  
+
   def add_at(index, item)
     @list.insert(index, item)
   end
-  
+
   def remove(index)
     @list.delete_at(index)
   end
-  
+
   private
-  
+
   def get_node(index)
-    return Node.new(index)
+    Node.new(index)
   end
 end
-
-
 
 list = LinkedList.new
 

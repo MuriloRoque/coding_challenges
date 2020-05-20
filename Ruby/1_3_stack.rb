@@ -1,12 +1,16 @@
+# frozen_string_literal: true
+
+# Node class
 class Node
   attr_accessor :value, :next_node
-  
+
   def initialize(value, next_node = nil)
-	  @value = value
+    @value = value
     @next_node = next_node
   end
 end
 
+# LinkedList class
 class LinkedList
   def initialize
     @list = []
@@ -17,32 +21,34 @@ class LinkedList
   end
 
   def get(index)
-    return @list[index]
+    @list[index]
   end
-  
+
   def add_at(index, item)
     @list.insert(index, item)
   end
-  
+
   def remove(index)
     @list.delete_at(index)
   end
-  
+
   private
-  
+
   def get_node(index)
-    return Node.new(index)
+    Node.new(index)
   end
 end
 
+# Stack class
 class Stack
   def initialize
-    @stack = LinkedList.new()
+    @stack = LinkedList.new
   end
+
   def push(number)
     @stack.add(number)
   end
-  
+
   def pop
     @stack.remove(-1)
   end

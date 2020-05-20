@@ -1,0 +1,6 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'rubocop', '~> 0.83.0', require: false
+gem 'solargraph', '~> 0.39.7'

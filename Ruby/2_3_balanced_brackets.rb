@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 def balanced_brackets?(string)
   hash = { '{' => '}', '[' => ']', '(' => ')' }
   arr = []
-  string.chars do | i |
+  string.chars do |i|
     if i.match(/[\[|\{|\(]/)
       arr << i
     elsif i.match(/[\]|\}|\)]/)
