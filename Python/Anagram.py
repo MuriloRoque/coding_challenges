@@ -1,10 +1,7 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
+
 
 # Complete the anagram function below.
 def anagram(s):
@@ -20,6 +17,7 @@ def anagram(s):
             if res == -1:
                 n += 1
         return n
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
