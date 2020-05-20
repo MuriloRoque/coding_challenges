@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 def sum(number)
-  if number == 1
-    return number
-  else
-    result = number + sum(number - 1)
-  end
-  return result
+  return number if number == 1
+
+  result = number + sum(number - 1)
+  result
 end
 
 puts sum(4)

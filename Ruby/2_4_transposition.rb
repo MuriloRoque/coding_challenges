@@ -1,18 +1,18 @@
-def transpose(string)
+# frozen_string_literal: true
+
+def transpose(string, num = 0, iter = 0)
   arr = string.split('')
-  n = 0
-  i = 0
-  while i < arr.length() do
-    if arr[i] == 'g' and arr[i+1] == 'n' and n != 0
-      arr[i-n], arr[i+1] = arr[i+1], arr[i-n]
-    elsif arr[i] == 'g' and arr[i+1] == 'n'
-      arr[i], arr[i+1] = arr[i+1], arr[i]
-    elsif arr[i] == 'g' and arr[i+1] == 'g'
-      n += 1
+  while iter < arr.length
+    if (arr[iter] == 'g') && (arr[iter + 1] == 'n') && (num != 0)
+      arr[iter - num], arr[iter + 1] = arr[iter + 1], arr[iter - num]
+    elsif (arr[iter] == 'g') && (arr[iter + 1] == 'n')
+      arr[iter], arr[iter + 1] = arr[iter + 1], arr[iter]
+    elsif (arr[iter] == 'g') && (arr[iter + 1] == 'g')
+      num += 1
     end
-    i += 1
+    iter += 1
   end
-  return arr.join()
+  arr.join
 end
 
 puts transpose('he was searchign on Bign for signign kigns')

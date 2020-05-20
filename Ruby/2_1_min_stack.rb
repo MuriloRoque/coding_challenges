@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Stack class
 class Stack
   def initialize
     @stack = []
@@ -6,15 +9,14 @@ class Stack
   def push(number)
     @stack.push(number)
   end
-  
+
   def pop
     @stack.pop
   end
-  
-  def min
-    return @stack.min()
-  end
 
+  def min
+    @stack.min
+  end
 end
 
 stack = Stack.new
