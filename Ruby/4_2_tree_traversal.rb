@@ -13,9 +13,9 @@ end
 def array_to_tree(array, elem)
   return nil if elem >= array.length || array[elem].zero?
 
-  node = Node.new(array[i])
-  node.left = array_to_tree(array, 2 * i + 1)
-  node.right = array_to_tree(array, 2 * i + 2)
+  node = Node.new(array[elem])
+  node.left = array_to_tree(array, 2 * elem + 1)
+  node.right = array_to_tree(array, 2 * elem + 2)
 
   node
 end
