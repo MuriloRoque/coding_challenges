@@ -1,10 +1,7 @@
 # frozen_string_literal: true
 
-def greatest_peaks(map)
+def greatest_peaks(map, graph = {}, peaks = [])
   i = 0
-  graph = {}
-  peaks = []
-
   while i < map.size
     j = 0
     while j < map[i].size
@@ -14,13 +11,11 @@ def greatest_peaks(map)
       r = map[i][j + 1] || 0
       t = (i - 1).negative? ? 0 : map[i - 1][j]
       b = (map[i + 1] && map[i + 1][j]) || 0
-
       if c < t && t > r && t > b && t > l then k = [i - 1, j]
       elsif c < r && r > b && r > l && r > t then k = [i, j + 1]
       elsif c < b && b > l && b > t && b > r then k = [i + 1, j]
       elsif c < l && l > t && l > r && l > b then k = [i, j - 1]
       end
-
       if k.nil? then peaks << [i, j]
       elsif graph[k] then graph[k] << [i, j]
       else graph[k] = [[i, j]] end
@@ -28,13 +23,14 @@ def greatest_peaks(map)
     end
     i += 1
   end
+  griding(peaks, graph)
+end
 
+def griding(peaks, graph)
   grid = peaks.map do |key|
     i = 0
     q = [key]
-    loop do
-      break if i == q.size
-
+    while i != q.size
       q += graph[q[i]] || []
       i += 1
     end
