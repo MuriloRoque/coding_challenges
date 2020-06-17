@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def connected_graph?(graph)
   discovered = Array.new(graph.keys.length, false)
   stack = []

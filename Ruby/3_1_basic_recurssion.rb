@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def sum(number)
   return number if number == 1
 

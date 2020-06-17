@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def leftmost_nodes_sum(array)
   i = 0
   sum = 0

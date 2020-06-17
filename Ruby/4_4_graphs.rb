@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def graph(hash_graph, arr = [], int = 0)
   return arr if arr[-1] == 4
 

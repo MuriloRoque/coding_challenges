@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def move(starting, goal)
   arr = [1, 2, 3]
   intermediate = (arr - [starting, goal]).pop

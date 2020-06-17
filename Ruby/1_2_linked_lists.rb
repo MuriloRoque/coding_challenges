@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Start with your code from last challenge.
 class Node
   attr_accessor :value, :next_node

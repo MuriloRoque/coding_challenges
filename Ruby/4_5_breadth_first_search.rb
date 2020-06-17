@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def bfs(graph)
   discovered = Array.new(graph.keys.length, false)
   queue = []

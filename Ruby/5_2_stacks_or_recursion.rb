@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def tree_height(tree_as_list)
   h = 1
   n = tree_as_list.length - 1

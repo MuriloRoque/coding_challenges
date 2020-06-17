@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def hanoi_steps(number_of_discs)
   move_disks(number_of_discs, 1, 2, 3)
 end

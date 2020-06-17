@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Node Class
 class Node
   attr_reader :data

@@ -1,6 +1,6 @@
-# frozen_string_literal: true
-
+# rubocop: disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
 def greatest_peaks(map, graph = {}, peaks = [])
+  # rubocop: enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
   i = 0
   while i < map.size
     j = 0

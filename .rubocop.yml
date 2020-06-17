@@ -1,6 +1,5 @@
 AllCops:
   Exclude:
-    - "README.md"
     - "Guardfile"
     - "Rakefile"
 
@@ -9,17 +8,13 @@ AllCops:
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
-  Max: 25
+  Max: 20
 Metrics/AbcSize:
-  Max: 60
+  Max: 50
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
-  Max: 30
-Metrics/CyclomaticComplexity:
-  Max: 30
-Metrics/PerceivedComplexity:
   Max: 30
 
 
@@ -43,15 +38,13 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
-
-Style/HashEachMethods:
-  Enabled: true
-Style/HashTransformKeys:
-  Enabled: true
-Style/HashTransformValues:
-  Enabled: true
-
 Lint/RaiseException:
-  Enabled: true
+  Enabled: false
 Lint/StructNewOverride:
-  Enabled: true
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
