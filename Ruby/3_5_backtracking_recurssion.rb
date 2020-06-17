@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def exact_sum?(total, coins)
   return true if total.zero?
   return false if coins.length.zero? || total.negative?

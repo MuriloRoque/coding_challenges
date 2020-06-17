@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def binary_tree_height(array_tree)
   h = 1
   n = array_tree.length - 1

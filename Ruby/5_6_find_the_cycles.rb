@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def graph_cycle?(graph)
   visited = Array.new(graph.size, false)
   graph.keys.each do |vertex|

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def depth_first_search(graph)
   discovered = Array.new(graph.keys.length, false)
   path = []

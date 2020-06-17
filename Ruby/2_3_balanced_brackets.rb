@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def balanced_brackets?(string)
   hash = { '{' => '}', '[' => ']', '(' => ')' }
   arr = []

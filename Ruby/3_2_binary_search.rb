@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def sqrt(number)
   sqrt_recursive(number, 0, number)
 end

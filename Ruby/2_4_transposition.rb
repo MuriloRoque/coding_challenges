@@ -1,6 +1,6 @@
-# frozen_string_literal: true
-
+# rubocop: disable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 def transpose(string, num = 0, iter = 0)
+  # rubocop: enable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
   arr = string.split('')
   while iter < arr.length
     if (arr[iter] == 'g') && (arr[iter + 1] == 'n') && (num != 0)
