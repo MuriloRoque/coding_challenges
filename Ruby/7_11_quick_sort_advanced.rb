@@ -12,12 +12,12 @@ def partition(array, first, last)
 end
 
 def advanced_quicksort(array, first = 0, last = array.length - 1)
-  if first < last
-    pivot = partition(array, first, last)
-    puts array.to_s
-    advanced_quicksort(array, first, pivot - 1)
-    advanced_quicksort(array, pivot + 1, last)
-  end
+  return unless first < last
+
+  pivot = partition(array, first, last)
+  puts array.to_s
+  advanced_quicksort(array, first, pivot - 1)
+  advanced_quicksort(array, pivot + 1, last)
 end
 
 advanced_quicksort([1, 3, 9, 8, 2, 7, 5])
