@@ -1,6 +1,6 @@
-# rubocop: disable Metrics/MethodLength, Metrics/PerceivedComplexity
+# rubocop: disable Metrics/MethodLength, Metrics/PerceivedComplexity, Metrics/CyclomaticComplexity
 def prime_prime(array)
-  # rubocop: enable Metrics/MethodLength, Metrics/PerceivedComplexity
+  # rubocop: enable Metrics/MethodLength, Metrics/PerceivedComplexity, Metrics/CyclomaticComplexity
   hash = {}
   list = sieve
   array.each do |item|

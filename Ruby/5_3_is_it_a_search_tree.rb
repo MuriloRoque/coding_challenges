@@ -23,9 +23,7 @@ def search_tree?(array)
   recursion(root)
 end
 
-# rubocop: disable Metrics/CyclomaticComplexity
 def recursion(node, lower = nil, higher = nil)
-  # rubocop: enable Metrics/CyclomaticComplexity
   return true if node.nil?
   return false if lower && (node.data < lower)
   return false if higher && (node.data > higher)
